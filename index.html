@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9af9cd2d4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Sarabun:wght@100&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>To do list</h1>
+        <div class="menu_button">
+            <div class="menu_button-lines"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="sideBar">
+            <div class="title">Projects</div>
+            <button id="addProject"><i class="fas fa-plus"></i>New project</button>
+            <div class="projectContainer"></div>
+        </div>
+        
+        <div class="listContainer">
+            <div class="projectName">No projects created</div>
+            <div class="itemContainer"></div>
+            <div class="newTodo"><i class="fas fa-plus"></i></i>Add</div>
+        </div>
+        
+        <div class="formBackground">
+            <div class="formContainer">
+                <i class="fas fa-times closeForm" aria-hidden="false"></i>
+                <form id="form" action="#">
+                    <input id="name" type="text" placeholder="Name" maxlength="25" required />
+                    <textarea id="note" placeholder="Note"></textarea>
+                    <input type="date" class="formDate" placeholder="Date">
+                    <button id="formSend" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="projectFormBackground">
+            <div class="projectFormContainer">
+                <i class="fas fa-times closeProjectForm"></i>
+                <form id="projectform" action="">
+                    <input id="projectName" type="text" placeholder="Name" maxlenght="15" required />
+                    <button id="projectFormSend" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
